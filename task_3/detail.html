@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Pendaftar | Tugas Individu 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="page-header">
+      <span class="eyebrow">Tugas Individu 3 &middot; Pemrograman Web</span>
+      <h1>Detail Pendaftar</h1>
+      <p class="subtitle">
+        Halaman detail informasi pendaftar yang dibuat dummy.
+        Data di bawah ini hanya contoh, bukan hasil pengambilan query string.
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Informasi Pendaftar</h2>
+        <p>Ringkasan data pendaftar yang telah mengisi formulir.</p>
+      </div>
+
+      <div class="profile">
+        <div class="avatar" aria-hidden="true">CP</div>
+        <div>
+          <h2>Cornelius Adhi Prasetya</h2>
+          <p>NIM 124140052 &middot; Kelas RA &middot; Teknik Informatika</p>
+        </div>
+        <span class="badge">Data dummy</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Data lengkap pendaftar</caption>
+          <thead>
+            <tr>
+              <th scope="col">Field</th>
+              <th scope="col">Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Nama Lengkap</th>
+              <td>Cornelius Adhi Prasetya</td>
+            </tr>
+            <tr>
+              <th scope="row">NIM</th>
+              <td>124140052</td>
+            </tr>
+            <tr>
+              <th scope="row">Kelas</th>
+              <td>RA</td>
+            </tr>
+            <tr>
+              <th scope="row">Program Studi</th>
+              <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+              <th scope="row">Email</th>
+              <td>cornelius.prasetya@student.ac.id</td>
+            </tr>
+            <tr>
+              <th scope="row">No. HP</th>
+              <td>0812-3456-7890</td>
+            </tr>
+            <tr>
+              <th scope="row">Jenis Kelamin</th>
+              <td>Laki-laki</td>
+            </tr>
+            <tr>
+              <th scope="row">Tanggal Lahir</th>
+              <td>12 Agustus 2005</td>
+            </tr>
+            <tr>
+              <th scope="row">Alamat</th>
+              <td>Jl. Soekarno-Hatta No. 12, Bandar Lampung</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="query-box">
+        <h3>Rancangan Query String</h3>
+        <p>
+          Format query string yang dikirim dari halaman pendaftaran (hanya dirancang,
+          tidak ditangkap oleh halaman ini):
+        </p>
+        <code>detail.html?nama=Cornelius+Adhi+Prasetya&amp;nim=124140052&amp;kelas=RA&amp;prodi=Teknik+Informatika&amp;email=cornelius.prasetya%40student.ac.id&amp;telepon=081234567890&amp;jenis_kelamin=Laki-laki&amp;tanggal_lahir=2005-08-12&amp;alamat=Jl.+Soekarno-Hatta+No.+12%2C+Bandar+Lampung</code>
+      </div>
+
+      <div class="card-foot">
+        <a class="btn btn-ghost" href="index.html">&larr; Kembali ke Pendaftaran</a>
+        <span class="foot-note">Halaman 2 dari 2</span>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

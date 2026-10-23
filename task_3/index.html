@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran | Tugas Individu 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="page-header">
+      <span class="eyebrow">Tugas Individu 3 &middot; Pemrograman Web</span>
+      <h1>Formulir Pendaftaran</h1>
+      <p class="subtitle">
+        Halaman pendaftaran menggunakan form dengan method <code>GET</code>.
+        Data dikirim melalui query string menuju halaman detail pendaftar.
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Data Pendaftar</h2>
+        <p>Lengkapi seluruh data di bawah ini dengan benar.</p>
+      </div>
+
+      <!-- Form method GET: data dikirim lewat query string ke detail.html -->
+      <form id="form-pendaftaran" method="get" action="detail.html" autocomplete="off">
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="nama">Nama Lengkap <span class="req">*</span></label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Cornelius Adhi Prasetya" required>
+          </div>
+
+          <div class="field">
+            <label for="nim">NIM <span class="req">*</span></label>
+            <input type="text" id="nim" name="nim" inputmode="numeric" placeholder="Contoh: 124140052" required>
+          </div>
+
+          <div class="field">
+            <label for="kelas">Kelas <span class="req">*</span></label>
+            <select id="kelas" name="kelas" required>
+              <option value="" selected disabled>Pilih kelas</option>
+              <option value="RA">RA</option>
+              <option value="RB">RB</option>
+              <option value="RC">RC</option>
+              <option value="RD">RD</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="prodi">Program Studi <span class="req">*</span></label>
+            <select id="prodi" name="prodi" required>
+              <option value="" selected disabled>Pilih program studi</option>
+              <option value="Teknik Informatika">Teknik Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="Teknik Komputer">Teknik Komputer</option>
+              <option value="Ilmu Komputer">Ilmu Komputer</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="cornelius.prasetya@student.ac.id" required>
+          </div>
+
+          <div class="field">
+            <label for="telepon">No. HP <span class="req">*</span></label>
+            <input type="tel" id="telepon" name="telepon" inputmode="tel" placeholder="08xxxxxxxxxx" required>
+          </div>
+
+          <div class="field">
+            <label for="tanggal_lahir">Tanggal Lahir <span class="req">*</span></label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+          </div>
+
+          <div class="field">
+            <label>Jenis Kelamin <span class="req">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label>
+              <label><input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan</label>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="alamat">Alamat <span class="req">*</span></label>
+            <textarea id="alamat" name="alamat" placeholder="Tulis alamat lengkap" required></textarea>
+          </div>
+
+        </div>
+
+        <div class="actions">
+          <button type="reset" class="btn btn-ghost">Reset</button>
+          <button type="submit" class="btn btn-primary">Lihat Detail &rarr;</button>
+        </div>
+      </form>
+
+      <div class="note">
+        <strong>Rancangan query string.</strong>
+        Karena form memakai <code>method="GET"</code>, data akan dikirim ke halaman detail
+        dalam bentuk pasangan <code>name=value</code> yang dipisahkan tanda <code>&amp;</code>.
+        Halaman detail hanya menampilkan data dummy (query string tidak ditangkap/diproses):
+        <br>
+        <code>detail.html?nama=...&amp;nim=...&amp;kelas=...&amp;prodi=...&amp;email=...&amp;telepon=...&amp;jenis_kelamin=...&amp;tanggal_lahir=...&amp;alamat=...</code>
+      </div>
+    </section>
+
+    <p class="page-footer">Tugas Individu 3 &middot; Pemrograman Web &mdash; Halaman 1 dari 2</p>
+
+  </main>
+</body>
+</html>
